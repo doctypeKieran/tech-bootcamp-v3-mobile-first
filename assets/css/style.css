@@ -61,10 +61,12 @@ header a {
     gap: 1.5rem;
     padding: 1.5rem 0 3rem;
 }
+
 #menu a {
     font-size: 1.25rem;
     font-weight: bold;
     color: rgb(0, 91, 221);
+    transition: all 0.2s linear;
 }
 
 #menu .active-link {
@@ -95,4 +97,34 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
+}
+
+
+
+/* Media query: small laptop screens and larger (980px and up) */
+@media screen and (min-width: 980px) {
+    header {
+        padding: 1rem 3rem;
+    }
+    /* Hide nav icon */
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* Show navbar */
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding: 0;
+        box-shadow: none;
+    }
+    #menu {
+        flex-direction: row;
+        padding: 0;
+        gap: 2rem;
+    }
+    #menu a:hover {
+        color: rgb(254, 85, 101);
+    }
 }
