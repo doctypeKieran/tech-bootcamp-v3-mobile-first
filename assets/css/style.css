@@ -106,6 +106,10 @@ nav {
     header {
         padding: 1rem 3rem;
     }
+
+    .header__logo-container h1 {
+        font-size: 1.25rem;
+    }
     /* Hide nav icon */
     .nav-toggle-label {
         display: none;
