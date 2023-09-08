@@ -1,0 +1,25 @@
+/* Google Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Universal font & Smooth Scrolling */
+html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+
+
+
+/* Header */
+
+.logo-img {
+    width: 60px;
+}
