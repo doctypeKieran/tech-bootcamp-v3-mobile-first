@@ -283,6 +283,7 @@ footer p {
     /* Home section */
     .grid-section {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 60vh;
         align-items: center;
         gap: 2rem;
     }
@@ -329,5 +330,13 @@ footer p {
     /* Add padding to sides of sections */
     section {
         padding: 1rem 7.5rem;
+    }
+
+    /* Resizing elements in grid layout */
+    .grid-header h1 {
+        font-size: 3rem;
+    }
+    .grid-header h2 {
+        font-size: 2.25rem;
     }
 }
