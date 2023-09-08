@@ -18,6 +18,13 @@ html {
 /* General Styles */
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 113px;
+    flex: 1 0 auto;
 }
 
 
@@ -103,6 +110,7 @@ nav {
 
 /* Media query: small laptop screens and larger (980px and up) */
 @media screen and (min-width: 980px) {
+    /* HEADER */
     header {
         padding: 1rem 3rem;
     }
@@ -130,5 +138,10 @@ nav {
     }
     #menu a:hover {
         color: rgb(254, 85, 101);
+    }
+
+    /* Increase main margin top for increased header height */
+    main {
+        margin-top: 118px;
     }
 }
