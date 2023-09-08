@@ -18,14 +18,23 @@
 <body>
     <header>
         <div class="header__logo-container">
-            <img src="assets/media/images/rocket-logo.png" alt="Rocket logo" class="logo-img">
+            <a href="index.html"><img src="assets/media/images/rocket-logo.png" alt="Rocket logo" class="logo-img">
+            </a>
             <h1>Richey's Bootcamp</h1>
         </div>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
-            
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="student-stories.html">Student Stories</a></li>
+                <li><a href="contact.html" class="active-link">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
+
     <main>
         Main content
     </main>

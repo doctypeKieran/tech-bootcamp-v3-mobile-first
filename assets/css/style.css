@@ -12,14 +12,87 @@
 html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+    color: #252525;
 }
 
 /* General Styles */
-
+body {
+    min-height: 100vh;
+}
 
 
 /* Header */
+header {
+    background-color: #ffffff;
+    padding: 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo-container h1 {
+    font-size: 1rem;
+}
 
 .logo-img {
     width: 60px;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0 3rem;
+}
+#menu a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(0, 91, 221);
+}
+
+#menu .active-link {
+    color: rgb(0, 41, 99);
+    text-decoration: underline;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
