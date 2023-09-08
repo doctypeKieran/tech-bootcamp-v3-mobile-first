@@ -198,6 +198,7 @@ footer p {
 /* Media query: tablet screen sizes (768px and larger) */
 @media screen and (min-width: 768px) {
 
+    /* Resize home elements to look better on tablet screens */
     .grid-column-with-text p {
         width: 75%;
     }
@@ -211,8 +212,15 @@ footer p {
     .grid-header h2 {
         font-size: 1.75rem;
     }
+    /* Make buttons flex alongside each other */
     .buttons-group {
         flex-direction: row;
+    }
+
+    /* Footer */
+    #footer-socials {
+        justify-content: center;
+        gap: 3.5rem;
     }
 }
 
