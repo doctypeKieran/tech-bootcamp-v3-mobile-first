@@ -197,6 +197,9 @@ footer p {
 
 /* Media query: tablet screen sizes (768px and larger) */
 @media screen and (min-width: 768px) {
+    .header__logo-container h1 {
+        font-size: 1.25rem;
+    }
 
     /* Resize home elements to look better on tablet screens */
     .grid-column-with-text p {
@@ -229,10 +232,6 @@ footer p {
     /* HEADER */
     header {
         padding: 1rem 3rem;
-    }
-
-    .header__logo-container h1 {
-        font-size: 1.25rem;
     }
     /* Hide nav icon */
     .nav-toggle-label {
