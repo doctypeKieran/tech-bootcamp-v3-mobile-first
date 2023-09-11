@@ -320,6 +320,48 @@ ul {
     padding-top: 6.3rem;
 }
 
+/* ABOUT SECTION */
+
+.meet-the-team-section {
+    margin-top: 2rem;
+}
+.meet-the-team-section > h2 {
+    margin-bottom: 2rem;
+}
+
+/* Grid container for team members */
+.team-members-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+/* Team member cards */
+.team-member {
+    background-color: rgb(0, 41, 99);
+    color: #fafafa;
+    padding: .5rem;
+    border-radius: 12px;
+}
+
+.team-member-info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.team-member-avatar {
+    border: 2px solid #fafafa;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.team-member-info-titles {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
 /* Media query: tablet screen sizes (768px and larger) */
 @media screen and (min-width: 768px) {
     /* Increase header text size */
