@@ -229,6 +229,23 @@ footer p {
 
 /* COURSES SECTION */
 
+/* Back to top button */
+.back-to-top-btn {
+    display: block;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 16%;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 98;
+    width: 50%;
+    background-color: rgb(254, 85, 101);
+    color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
 /* Grid container for all courses */
 .courses-container {
     display: grid;
@@ -343,6 +360,12 @@ ul {
     .courses-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Back to top button */
+    .back-to-top-btn {
+        top: 17%;
+        width: 25%;
+    }
 }
 
 /* Media query: small laptop screens and larger (980px and up) */
@@ -430,6 +453,11 @@ ul {
     /* Create more gap between course cards */
     .courses-container {
         gap: 2rem;
+    }
+
+    /* Back to top button */
+    .back-to-top-btn {
+        width: 15%;
     }
 }
 
