@@ -325,7 +325,8 @@ ul {
 .meet-the-team-section {
     margin-top: 2rem;
 }
-.meet-the-team-section > h2 {
+
+.meet-the-team-section>h2 {
     margin-bottom: 2rem;
 }
 
@@ -337,11 +338,24 @@ ul {
 }
 
 /* Team member cards */
-.team-member {
+.team-member-card {
     background-color: rgb(0, 41, 99);
     color: #fafafa;
     padding: .5rem;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.team-member-card h3 {
+    font-size: 1.2rem;
+}
+
+.team-member-card p {
+    padding: 1rem;
+    font-style: italic;
+    line-height: 1.4;
 }
 
 .team-member-info {
@@ -349,6 +363,7 @@ ul {
     align-items: center;
     gap: .5rem;
 }
+
 .team-member-avatar {
     border: 2px solid #fafafa;
     border-radius: 50%;
@@ -356,6 +371,7 @@ ul {
     height: 80px;
     object-fit: cover;
 }
+
 .team-member-info-titles {
     display: flex;
     flex-direction: column;
@@ -364,6 +380,7 @@ ul {
 
 /* Media query: tablet screen sizes (768px and larger) */
 @media screen and (min-width: 768px) {
+
     /* Increase header text size */
     .header__logo-container h1 {
         font-size: 1.25rem;
@@ -407,6 +424,12 @@ ul {
     .back-to-top-btn {
         top: 17%;
         width: 25%;
+    }
+
+    /* ABOUT SECTION */
+    /* Make two column layout for larger screens */
+    .team-members-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -470,6 +493,12 @@ ul {
     /* Create 3 column layout */
     .courses-container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ABOUT SECTION */
+    /* Increase padding on team member cards */
+    .team-member-card {
+        padding: 1rem;
     }
 }
 
